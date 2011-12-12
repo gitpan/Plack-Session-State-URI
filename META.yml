@@ -20,7 +20,8 @@ no_index:
 requires:
   HTML::StickyQuery: 0
   Plack: 0
+  Plack::Middleware::Session: 0
 resources:
   license: http://dev.perl.org/licenses
   repository: https://github.com/s-aska/p5-Plack-Session-State-URI
-version: 0.01
+version: 0.02
