@@ -6,12 +6,12 @@ use Plack::Session::State::URI;
 use Plack::Session::Store::File;
 use Plack::Test;
 use Test::More;
-use File::Temp;
+use File::Temp qw(tempdir);
 
 my $app = builder {
     enable 'Plack::Middleware::Session',
         store => Plack::Session::Store::File->new(
-            dir => File::Temp->tempdir( 'XXXXXXXX', TMPDIR => 1, CLEANUP => 1 )
+            dir => tempdir( 'XXXXXXXX', TMPDIR => 1, CLEANUP => 1 )
         ),
         state => Plack::Session::State::URI->new(
             session_key => 'sid'

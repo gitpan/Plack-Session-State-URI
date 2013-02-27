@@ -24,4 +24,4 @@ requires:
 resources:
   license: http://dev.perl.org/licenses
   repository: https://github.com/s-aska/p5-Plack-Session-State-URI
-version: 0.02
+version: 0.03
