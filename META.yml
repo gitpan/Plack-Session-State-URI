@@ -3,11 +3,14 @@ abstract: 'uri-based session state'
 author:
   - 'Shinichiro Aska <s.aska.org {at} gmail.com>'
 build_requires:
-  ExtUtils::MakeMaker: 6.42
+  ExtUtils::MakeMaker: 6.36
+  HTTP::Request::Common: 0
+  Test::More: 0
 configure_requires:
-  ExtUtils::MakeMaker: 6.42
-distribution_type: module
-generated_by: 'Module::Install version 1.00'
+  CPAN::Meta: 0
+  ExtUtils::MakeMaker: 6.36
+dynamic_config: 0
+generated_by: 'Module::Install version 1.06, CPAN::Meta::Converter version 2.132140'
 license: perl
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
@@ -24,4 +27,4 @@ requires:
 resources:
   license: http://dev.perl.org/licenses
   repository: https://github.com/s-aska/p5-Plack-Session-State-URI
-version: 0.03
+version: 0.04
